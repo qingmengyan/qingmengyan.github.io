@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Sandbox Program</title>
+    <style>
+        /* 申请页面样式 */
+        body {
+            font-family: "Arial Rounded MT", sans-serif;
+            background-color: #659966;
+            color: #ffffff;
+        }
+        .application-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #659966;
+        }
+        .form-field {
+            margin-bottom: 20px;
+        }
+        .form-field label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-field input {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-field select {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: #fff;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="application-form">
+        <h1>Employer Information</h1>
+        <form action="submit_application.php" method="post">
+            <div class="form-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+                <label for="schoolID">Phone Number:</label>
+                <input type="text" id="schoolID" name="schoolID" required>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+                <label for="college">Expected Employee Skills:</label>
+                <input type="text" id="college" name="college" required>
+            </div>
+          <!--  <div class="form-field">
+                <label for="role">Are you a Scholar or a Student?</label>
+                <select id="role" name="role" required>
+                    <option value="scholar">Scholar</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>-->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <p>Your privacy informtion will be protected by NOVA Employment..</p>
+    </div>
+</body>
+</html>
